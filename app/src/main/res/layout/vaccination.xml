@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:isScrollContainer="false"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="@string/please_check_the_vaccination_already_given_to_the_baby"
+        android:textAlignment="center"
+        android:textColor="#171515"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <Button
+        android:id="@+id/btn_firstVaccineDone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFFFF"
+        android:backgroundTint="#F1EDED"
+        android:text="@string/done"
+        android:textColor="#FFFFFFFF"
+        app:iconTint="#FFFFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.973"
+        app:strokeColor="#FFFFFFFF"
+        tools:ignore="TextContrastCheck" />
+
+    <ScrollView
+        android:layout_width="409dp"
+        android:layout_height="579dp"
+        android:layout_marginTop="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_firstVaccineDone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/b_c_g_at_birth"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"
+                    tools:ignore="DuplicateSpeakableTextCheck" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/dpt_1_2_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/opv_1_2_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/hepatitis_b1_2_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/dpt_2_4_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:minWidth="48dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/opv_2_4_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/hepatitis_b2_4_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/dpt_3_6_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/opv_3_6_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/hepatitis_b3_6_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/measles_9_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/vitamin_9_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/dpt4_18_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/opv_4_18_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/vitamin_a_18_months_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp"
+                    android:minWidth="48dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/measles_and_rubella_3_years_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp">
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/vitamin_a_3_years_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp">
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/d_t_5_years_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp">
+                </CheckBox>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp">
+
+                <TextView
+                    android:layout_width="300sp"
+                    android:layout_height="40sp"
+                    android:background="#9960E9"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10sp"
+                    android:paddingEnd="10dp"
+                    android:text="@string/opv_5_5_years_completed"
+                    android:textColor="#1B1A1A"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck" />
+
+                <CheckBox
+                    android:id="@+id/checkbox_vac19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50sp">
+                </CheckBox>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
