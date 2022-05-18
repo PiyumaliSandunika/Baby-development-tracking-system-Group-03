@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".FirstPageActivity"
     android:background="@drawable/gradient_background">
 
     <TextView
@@ -11,19 +12,18 @@
         android:layout_width="342dp"
         android:layout_height="52dp"
         android:layout_marginStart="34dp"
-        android:layout_marginTop="308dp"
         android:layout_marginEnd="35dp"
         android:padding="10dp"
-        android:text="Click here to add a new baby"
-        android:textSize="20dp"
-        android:textColor="@color/black"
+        android:text="@string/click_here_to_add_a_new_baby"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btn_signin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintVertical_bias="0.09" />
 
     <Button
         android:id="@+id/btn_signin"
@@ -36,21 +36,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.585" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_signin"
+        app:layout_constraintVertical_bias="0.067" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="415dp"
-        android:layout_height="238dp"
+        android:layout_width="404dp"
+        android:layout_height="237dp"
+        android:contentDescription="@string/todo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/todo" />
+        app:srcCompat="@drawable/logo" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -71,13 +70,13 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="35dp"
         android:padding="10dp"
-        android:text="Click here to go to the Baby List"
-        android:textSize="20dp"
-        android:textColor="@color/black"
+        android:text="@string/click_here_to_go_to_the_dashboard"
         android:textAlignment="center"
-        app:layout_constraintBottom_toTopOf="@+id/btn_login"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_signin"
         app:layout_constraintVertical_bias="0.0"
@@ -89,12 +88,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginEnd="159dp"
-        android:text="@string/go_to_baby_list"
+        android:text="Go to the dashboard"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_signin"
-        app:layout_constraintVertical_bias="0.689" />
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.21" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

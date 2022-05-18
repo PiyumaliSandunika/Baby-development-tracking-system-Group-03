@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".HeightTrackerActivity"
     android:background="@drawable/gradient_background">
 
     <LinearLayout
@@ -61,20 +62,6 @@
 
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/editText_Height"
-        android:layout_width="345dp"
-        android:layout_height="68dp"
-        android:ems="10"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="@string/height_in_cm"
-        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.547" />
-
     <Button
         android:id="@+id/btn_height_add"
         android:layout_width="wrap_content"
@@ -119,16 +106,16 @@
         android:id="@+id/textView12"
         android:layout_width="340dp"
         android:layout_height="45dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="124dp"
         android:text="Age"
-        android:textSize="20dp"
         android:textColor="#000000"
+        android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.535"
+        app:layout_constraintHorizontal_bias="0.521"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_Height"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_Height"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editText_Years"
@@ -141,7 +128,6 @@
         android:text="Years"
         app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
         app:layout_constraintEnd_toStartOf="@+id/editText_Months"
-        app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="1.0" />
@@ -163,5 +149,18 @@
         app:layout_constraintTop_toBottomOf="@+id/textView12"
         app:layout_constraintVertical_bias="1.0" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/editTxt_Height"
+        android:layout_width="343dp"
+        android:layout_height="57dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="Height in cm"
+        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
