@@ -41,4 +41,15 @@
     <string name="height_in_cm">Height in cm</string>
     <string name="weight_tracker">Weight Tracker</string>
     <string name="baby_list">Baby List</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="click_here_to_add_a_new_baby">Click here to add a new baby</string>
+    <string name="click_here_to_go_to_the_dashboard">Click here to go to the Dashboard</string>
 </resources>

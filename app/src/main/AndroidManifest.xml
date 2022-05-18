@@ -10,6 +10,27 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BabyCare">
         <activity
+            android:name=".VaccinationTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeightTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VaccinationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddBabyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPageActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
