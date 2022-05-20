@@ -34,7 +34,7 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
-        android:text="@string/baby_s_name"
+        android:hint="@string/baby_s_name"
         android:textColor="#2C2B2B"
         app:layout_constraintBottom_toTopOf="@+id/editTxt_BDate"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,7 +50,7 @@
         android:ems="10"
         android:importantForAutofill="no"
         android:inputType="date"
-        android:text="Date of Birth*"
+        android:hint="Date of Birth*"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.421"
@@ -62,45 +62,41 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="374dp"
-        android:layout_height="52dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
         android:layout_marginEnd="15dp"
-        android:orientation="horizontal"
+        android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/btn_addbaby_done"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:layout_constraintVertical_bias="0.889">
+        app:layout_constraintVertical_bias="1">
 
-        <CheckBox
-            android:id="@+id/checkbox_boy"
-            android:layout_width="48dp"
-            android:layout_height="wrap_content"
-            android:textColor="#100F0F"
-            tools:ignore="DuplicateSpeakableTextCheck" />
-
-        <TextView
+        <RadioGroup
+            android:id="@+id/radioGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingEnd="50dp"
-            android:text="@string/boy"
-            android:textColor="#151515" />
+            app:layout_constraintTop_toBottomOf="@+id/editTxt_BDate"
+            >
 
-        <CheckBox
-            android:id="@+id/checkbox_girl"
-            android:layout_width="48dp"
-            android:layout_height="wrap_content"
-            android:textColor="#171616" />
+            <RadioButton
+                android:id="@+id/radbtn_boy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Boy"
+                android:textColor="#100F0F" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingStart="5dp"
-            android:paddingEnd="50dp"
-            android:text="@string/girl"
-            android:textColor="#151515" />
+            <RadioButton
+                android:id="@+id/radbtn_girl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="   Girl"
+                android:textColor="#100F0F" />
+
+        </RadioGroup>
+
+
 
     </LinearLayout>
 

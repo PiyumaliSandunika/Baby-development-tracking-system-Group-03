@@ -10,7 +10,7 @@
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,57 +23,37 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/imageView6"
-                android:layout_width="246dp"
-                android:layout_height="170dp"
+                android:layout_width="wrap_content"
+                android:layout_height="160dp"
                 android:layout_weight="1"
-                android:background="@color/white"
                 android:contentDescription="@string/todo"
                 app:srcCompat="@drawable/weight" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@color/white"
-                    android:paddingTop="20dp"
+                    android:layout_height="160dp"
+                    android:paddingTop="50dp"
                     android:text="Weight Tracker"
                     android:textAlignment="center"
                     android:textColor="#090909"
-                    android:textSize="25sp" />
+                    android:textSize="30sp" />
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:background="@color/white"
-                    android:text="TextView" />
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
-
-    <EditText
-        android:id="@+id/edittext_weight"
-        android:layout_width="345dp"
-        android:layout_height="68dp"
-        android:ems="10"
-        android:importantForAutofill="no"
-        android:inputType="textPersonName"
-        android:text="Weight in kg"
-        app:layout_constraintBottom_toTopOf="@+id/text_weight_comment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_weight_add"
@@ -103,8 +83,8 @@
 
     <TextView
         android:id="@+id/text_weight_comment"
-        android:layout_width="482dp"
-        android:layout_height="69dp"
+        android:layout_width="412dp"
+        android:layout_height="71dp"
         android:background="#94B4CD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -115,26 +95,26 @@
 
     <TextView
         android:id="@+id/textView13"
-        android:layout_width="342dp"
-        android:layout_height="45dp"
+        android:layout_width="343dp"
+        android:layout_height="24dp"
         android:text="Age"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/text_weight_comment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edittext_weight"
-        app:layout_constraintVertical_bias="0.287" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_weight"
+        app:layout_constraintVertical_bias="0.251" />
 
     <EditText
         android:id="@+id/editText_weight_years"
-        android:layout_width="159dp"
-        android:layout_height="42dp"
+        android:layout_width="165dp"
+        android:layout_height="45dp"
         android:layout_marginTop="1dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Years"
+        android:inputType="number"
+        android:hint="Years"
         app:layout_constraintBottom_toTopOf="@+id/text_weight_comment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.13"
@@ -147,13 +127,30 @@
         android:layout_width="177dp"
         android:layout_height="44dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Months"
+        android:inputType="number"
+        android:hint="Months"
         app:layout_constraintBottom_toTopOf="@+id/text_weight_comment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.858"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/editTxt_weight"
+        android:layout_width="352dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="Weight in kg"
+        app:layout_constraintBottom_toTopOf="@+id/text_weight_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

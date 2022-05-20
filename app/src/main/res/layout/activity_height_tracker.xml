@@ -9,9 +9,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout3"
-        android:layout_width="411dp"
-        android:layout_height="166dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -22,48 +23,42 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:background="@color/white">
 
             <ImageView
                 android:id="@+id/imageView6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="160dp"
                 android:layout_weight="1"
-                android:background="@color/white"
                 android:contentDescription="@string/todo"
-                app:srcCompat="@drawable/height"
-                tools:ignore="ImageContrastCheck" />
+                app:srcCompat="@drawable/height" />
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView9"
                     android:layout_width="match_parent"
-                    android:layout_height="80dp"
-                    android:background="@color/white"
-                    android:paddingTop="20dp"
-                    android:text="@string/height_tracker"
+                    android:layout_height="160dp"
+                    android:paddingTop="55dp"
+                    android:text="Height Tracker"
                     android:textAlignment="center"
                     android:textColor="#090909"
-                    android:textSize="25sp" />
+                    android:textSize="30sp"
 
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="90dp"
-                    android:background="@color/white"
-                    android:text="TextView" />
+                    />
+
             </LinearLayout>
         </LinearLayout>
 
     </LinearLayout>
 
     <Button
-        android:id="@+id/btn_height_add"
+        android:id="@+id/btn_weight_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
@@ -74,8 +69,7 @@
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.907"/>
 
     <Button
         android:id="@+id/btn_height_back"
@@ -87,8 +81,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.907"
-        tools:ignore="TextContrastCheck" />
+        app:layout_constraintVertical_bias="0.907"/>
 
     <TextView
         android:id="@+id/text_height_comment"
@@ -103,64 +96,60 @@
         app:layout_constraintVertical_bias="0.74" />
 
     <TextView
-        android:id="@+id/textView12"
-        android:layout_width="340dp"
-        android:layout_height="45dp"
-        android:layout_marginBottom="124dp"
+        android:id="@+id/textView13"
+        android:layout_width="343dp"
+        android:layout_height="24dp"
         android:text="Age"
         android:textColor="#000000"
         android:textSize="20dp"
         app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.521"
+        app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTxt_Height"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxt_height"
+        app:layout_constraintVertical_bias="0.251" />
 
     <EditText
-        android:id="@+id/editText_Years"
-        android:layout_width="149dp"
+        android:id="@+id/editText_height_years"
+        android:layout_width="165dp"
         android:layout_height="45dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="62dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Years"
-        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
-        app:layout_constraintEnd_toStartOf="@+id/editText_Months"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editText_Months"
-        android:layout_width="152dp"
-        android:layout_height="44dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="12dp"
-        android:layout_marginBottom="62dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Months"
-        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.902"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView12"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <EditText
-        android:id="@+id/editTxt_Height"
-        android:layout_width="343dp"
-        android:layout_height="57dp"
+        android:layout_marginTop="1dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Height in cm"
+        android:hint="Years"
         app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editText_height_months"
+        android:layout_width="177dp"
+        android:layout_height="44dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Months"
+        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.858"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <EditText
+        android:id="@+id/editTxt_height"
+        android:layout_width="352dp"
+        android:layout_height="66dp"
+        android:ems="10"
+        android:inputType="number"
+        android:hint="Height in cm"
+        app:layout_constraintBottom_toTopOf="@+id/text_height_comment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.415"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.517" />
+        app:layout_constraintVertical_bias="0.581"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
