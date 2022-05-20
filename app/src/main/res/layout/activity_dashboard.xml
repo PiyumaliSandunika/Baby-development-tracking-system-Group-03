@@ -19,7 +19,7 @@
             android:id="@+id/text_dashName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Name"
+            android:text="Dashboard"
             android:textStyle="bold"
             android:textSize="30sp"/>
 

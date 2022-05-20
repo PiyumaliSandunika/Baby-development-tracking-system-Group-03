@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BabyCare">
         <activity
+            android:name=".Height_Comparison"
+            android:exported="false" />
+        <activity
+            android:name=".Weight_View"
+            android:exported="false" />
+        <activity
+            android:name=".Weight_Comparison"
+            android:exported="false" />
+        <activity
             android:name=".VaccinationTrackerActivity"
             android:exported="false" />
         <activity

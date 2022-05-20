@@ -35,7 +35,7 @@ public class DashboardActivity extends AppCompatActivity implements View.OnClick
                 break;
 
             case R.id.card_weight:
-                intent = new Intent(DashboardActivity.this,WeightTrackerActivity.class);
+                intent = new Intent(DashboardActivity.this, Weight_View.class);
                 startActivity(intent);
                 break;
 
