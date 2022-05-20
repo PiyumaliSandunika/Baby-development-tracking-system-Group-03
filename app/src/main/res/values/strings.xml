@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Baby Care</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="baby_care_makes_n_tracking_your_child_s_n_development_easy_and_fun">Baby Care makes \n tracking your child\'s \n development easy and fun!</string>
+    <string name="start_tracking">Start tracking!</string>
+    <string name="textview">TextView</string>
+    <string name="add_a_baby">Add a baby</string>
+    <string name="go_to_baby_list">Go to baby list</string>
+    <string name="b_c_g_at_birth">B.C.G | at birth</string>
+    <string name="dpt_2_4_months_completed">DPT 2 | 4 months completed</string>
+    <string name="dpt_1_2_months_completed">DPT 1 | 2 months completed</string>
+    <string name="opv_1_2_months_completed">OPV 1 | 2 months completed</string>
+    <string name="hepatitis_b1_2_months_completed">Hepatitis B1 | 2 months completed</string>
+    <string name="opv_2_4_months_completed">OPV 2 | 4 months completed</string>
+    <string name="hepatitis_b2_4_months_completed">Hepatitis B2 | 4 months completed</string>
+    <string name="measles_9_months_completed">Measles | 9 months completed</string>
+    <string name="opv_5_5_years_completed">OPV 5 | 5 years completed</string>
+    <string name="d_t_5_years_completed">D.T | 5 years completed</string>
+    <string name="vitamin_a_3_years_completed">Vitamin A | 3 years completed</string>
+    <string name="measles_and_rubella_3_years_completed">Measles and Rubella | 3 years completed</string>
+    <string name="vitamin_a_18_months_completed">Vitamin A | 18 months completed</string>
+    <string name="opv_4_18_months_completed">OPV 4 | 18 months completed</string>
+    <string name="vitamin_9_months_completed">Vitamin | 9 months completed</string>
+    <string name="dpt4_18_months_completed">DPT4 | 18 months completed</string>
+    <string name="hepatitis_b3_6_months_completed">Hepatitis B3 | 6 months completed</string>
+    <string name="opv_3_6_months_completed">OPV 3 | 6 months completed</string>
+    <string name="dpt_3_6_months_completed">DPT 3 | 6 months completed</string>
+    <string name="please_check_the_vaccination_already_given_to_the_baby">Please check the vaccination already given to the baby</string>
+    <string name="done">Done</string>
+    <string name="baby_s_name">Baby\'s name*</string>
+    <string name="select_one">Select one*</string>
+    <string name="boy">Boy</string>
+    <string name="required">*Required</string>
+    <string name="girl">Girl</string>
+    <string name="vaccination_tracker">Vaccination Tracker</string>
+    <string name="update_the_vaccination_status_of_the_baby">Update the vaccination status of the baby</string>
+    <string name="back">Back</string>
+    <string name="height_tracker">Height Tracker</string>
+    <string name="add">Add</string>
+    <string name="height_in_cm">Height in cm</string>
+    <string name="weight_tracker">Weight Tracker</string>
+    <string name="baby_list">Baby List</string>
+    <string name="title_activity_main2">MainActivity2</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="click_here_to_add_a_new_baby">Click here to add a new baby</string>
+    <string name="click_here_to_go_to_the_dashboard">Click here to go to the Dashboard</string>
+</resources>

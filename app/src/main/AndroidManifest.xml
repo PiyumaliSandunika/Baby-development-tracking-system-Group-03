@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.babycare">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BabyCare">
+        <activity
+            android:name=".VaccinationTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WeightTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HeightTrackerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".VaccinationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddBabyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FirstPageActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
